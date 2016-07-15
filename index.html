@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link href="css/global.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<img src="img/web_wechat_login_bg28a2f7.jpg" id="bg" />
+		<div class="loginPage">
+			<img src="img/loginLogo.png" id="loginLogo" />
+			<div id="loginBox">
+				<img src="img/loginLogo2.png" id="loginLogo2" />
+				<span>账号：<input type="text" id="username"></span>
+				<span>密码：<input type="password" id="password"></span>
+				<div class="rmb"><input type="checkbox" checked="true" id="rmbUser"><p>记住密码</p></div>
+				<input type="button" value="登陆" id="login">
+			</div>
+			<div id="lang">
+				<a href="#">微信PC版</a>
+				<span></span>
+				<a href="#">中文</a>
+				<span></span>
+				<a href="#">繁体</a>
+				<span></span>
+				<a href="#">English</a>
+			</div>
+			<div id="copyright">
+				<span>© 1998 - 2016 Tencent Inc. All Rights Reserved</span>
+			</div>
+		</div>
+		<div class="inner">
+			<div id="control">
+				<div id="ctHeader">
+					<img src="img/userHead.png" class="userHead">
+					<span id="displayName"></span>
+					<img src="img/option.png" id="option">
+					<ul id="optionMenu">
+						<li><a id="userinfo"><img src="img/info.png">修改资料</a></li>
+						<li><a id="logout"><img src="img/lout.png">退出登陆</a></li>
+					</ul>
+				</div>
+				<div id="tab">
+					<div class="tabItem1"></div>
+					<span></span>
+					<div class="tabItem2"></div>
+				</div>
+				<ol class="flist">					
+				</ol>
+				<ol class="clist">
+				</ol>
+			</div>
+			<div class="chatArea">
+				<div class="title"><span class="titleTxt"></span></div>
+				<div id="cAMain">
+					<!--<p class="time"><span>1</span></p>
+					<p class="left"><img src="img/userHead.png" class="userHead"><span class="spanL">1</span></p>
+					<p class="right"><span class="spanR">1</span><img src="img/userHead.png" class="userHead"></p>-->
+				</div>
+				<div id="cAft">
+					<div class="tool">
+						<img src="img/expression.png" class="expression">
+						<div class="expressions">
+							<div id="wx"></div>
+							<div id="pz"></div>
+							<div id="se"></div>
+							<div id="ng"></div>
+							<div id="dy"></div>
+							<div id="s"></div>
+							<div id="dx"></div>
+							<div id="jy"></div>
+							<div id="kk"></div>
+							<div id="k"></div>
+							<div id="zk"></div>
+							<div id="kx"></div>
+							<div id="tx"></div>
+							<div id="by"></div>
+							<div id="am"></div>
+							<div id="zj"></div>
+							<div id="kb"></div>
+							<div id="je"></div>
+							<div id="qq"></div>
+							<div id="aq"></div>
+							<div id="fw"></div>
+							<div id="yb"></div>
+							<div id="ax"></div>
+							<div id="ok"></div>
+							<div id="gz"></div>
+							<div id="qz"></div>
+							<div id="zz"></div>
+							<div id="zy"></div>
+							<div id="xq"></div>
+							<div id="xw"></div>
+							<div id="dk"></div>
+							<div id="cy"></div>
+							<div id="kl"></div>
+							<div id="hj"></div>
+							<div id="mt"></div>
+							<div id="sa"></div>
+							<div id="qs"></div>
+							<div id="wx2"></div>
+							<div id="tx2"></div>
+						</div>
+					</div>
+					<textarea id="cAContent"  cols="95"></textarea>
+					<div id="action">
+						<span>按下Ctrl+Enter发送</span>
+						<input type="button" value="发送" id="send">
+					</div>
+				</div>
+			</div>
+			<div class="usinfoArea">
+				<div class="title"><span class="titleTxt"></span></div>
+				<div class="introduce">
+					<div class="uspicture"><img src="img/userHead.png"></div>
+					<div class="nicknameArea">
+						<span class="label">姓名：</span><input type="text" value="XXX" id="nickname">
+					</div>
+					<div class="ageArea">
+						<span class="label">年龄：</span><input type="text" value="XXX" id="age">
+					</div>
+					<div class="sexArea">
+						<span class="label">性别：</span><input type="text" value="XXX" id="sex">
+					</div>
+					<div class="itArea">
+						<span class="label">自我介绍：</span><input type="text" value="XXX" id="it">
+					</div>
+					<div class="emailArea">
+						<span class="label">email：</span><input type="text" value="XXX" id="email">
+					</div>
+					<input type="button" id="update" value="修改">
+				</div>
+			</div>
+			<div class="finfoArea">
+				<div class="title"><span class="titleTxt"></span></div>
+				<div class="introduce">
+					<div class="uspicture"><img src="img/userHead.png"></div>
+					<div class="remarkArea">
+						<div class="NS"><span class="FNickname"></span><div class="FSex"></div></div>
+						<p class="FIntroduce"></p>
+						<div class="ageC"><span class="label">年龄：</span><span class="age"></span></div>
+						<div class="emailC"><span class="label">email：</span><span class="email"></span></div>
+						<div class="remarkC"><span class="label">备注：</span><input type="text" value="" id="remark"></div>
+						<input id="sendmg" type="button" value="发信息">
+					</div>
+				</div>
+			</div>
+			<div class="noMessage">
+				<div class="title"></div>
+				<div class="noMessageMain">
+					<div class="noMessageImg"><img src="img/noMessage.png"></div>
+					<p class="noMessageTxt">未选择聊天</p> 
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/JQ.js" ></script>
+	<script type="text/javascript" src="js/IXD.js"></script>
+</html>

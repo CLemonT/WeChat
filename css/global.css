@@ -1,0 +1,951 @@
+html{
+	height: 100%;
+}
+
+body{
+	margin: 0 auto;
+	height: 100%;
+	min-height: 667px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #c3c3c3;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+#bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -100;
+}
+
+.loginPage{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#loginLogo{
+	position: absolute;
+	top: 50px;
+	left: 60px;
+}
+
+#loginBox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -190px;
+	margin-top: -240px;
+	border-radius: 5px;
+	background-color: white;
+	width: 380px;
+	height: 480px;
+}
+
+#loginLogo2{
+	display: block;
+	margin: 40px auto 60px;
+	width: 100px;
+	height: 79px;
+}
+
+#loginBox span{
+	display: block;
+	margin: 40px auto 0 auto;
+	width: 300px;
+	font: normal 18px "microsoft yahei";
+	color: black;
+}
+
+#username,#password{
+	padding: 5px;
+	width: 78%;
+	border: 0;
+	border-bottom: 1px solid black;
+}
+
+.rmb{
+	margin: 15px 40px;
+	text-align: right;
+}
+
+.rmb p{
+	display: inline-block;
+	font: normal 12px "microsoft yahei";
+	color: black;
+}
+
+#login{
+	display: block;
+	width: 40%;
+	margin: 20px auto 0;
+	padding: 10px; 
+	border: 0;
+	font: normal 18px "microsoft yahei";
+	background-color: #77cf33;
+}
+
+#lang{
+	position: absolute;
+	bottom: 50px;
+	left: 60px;
+}
+
+#lang a{
+	text-decoration: none;
+	font: normal 12px "microsoft yahei";
+	color: #d3d3d3;
+}
+
+#lang span{
+	display: inline-block;
+	vertical-align: middle;
+	height: 12px;
+	border-left: 1px solid #d3d3d3;
+	margin: 0 10px;
+}
+
+#copyright{
+	position: absolute;
+	bottom: 50px;
+	right: 60px;	
+}
+
+#copyright span{
+	color: #d3d3d3;
+	font: normal 12px "microsoft yahei";
+}
+
+@media (min-width: 1000px) and (min-height: 800px){
+.inner{
+	width: 1000px;
+	height: 80%;
+	position: relative;
+	display: none;
+	min-height: 600px;
+	margin: 80px auto 0;
+}
+}
+
+@media (max-width: 1000px),(max-height: 800px){
+.inner{
+	position: relative;
+	display: none;
+	width: 80%;
+	height: 100%;
+	min-height: 600px;
+	margin: 0 auto;
+}
+}
+
+@media (max-width: 1000px){
+.inner{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: none;
+	min-height: 600px;
+	margin: 0 auto;
+}
+}
+
+#control{
+	float: left;
+	position: absolute;
+	width: 280px;
+	height: 100%;
+	background-color: #2e3238;
+	z-index: 100;
+}
+
+#ctHeader{
+	width: 280px;
+	margin: 25px 18px;
+}
+
+#displayName{
+	display: inline-block;
+	width: 155px;
+	vertical-align: middle;
+	font: bold 18px "microsoft yahei";
+	color: white;
+}
+
+.userHead,#option{
+	vertical-align: middle;
+}
+
+.userHead{
+	width: 38px;
+	height: 38px;
+	border-radius: 2px;
+}
+
+#optionMenu{
+	position: absolute;
+	display: none;
+	top: 55px;
+	right: 20px;
+	padding: 0px;
+	min-width: 125px;
+	background-color: white;
+	border-radius: 4px;
+	border: 1px solid #d6d6d6;
+	list-style-type: none;
+	z-index: 500;
+}
+
+#optionMenu li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font: normal 14px "microsoft yahei";
+	padding: 15px;
+	border-bottom: 1px solid #f1f1f1;
+	text-align: left;
+	cursor: pointer;
+}
+
+#optionMenu li a img{
+	margin-right: 15px;
+	vertical-align: middle;
+}
+
+#optionMenu li a:hover{
+	background-color: #f5f5f5;
+}
+
+#tab{
+	position: relative;
+	z-index: 200;
+	margin-top: 30px;
+	border-bottom: 1px solid #24272C;
+}
+
+#tab span{
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 5px;
+	height: 25px;
+	border-left: 1px solid #24272C;
+}
+
+.tabItem1,.tabItem2{
+	float: left;
+	position: relative;
+	width: 29%;
+	height: 35px;
+	margin: 0 10%;
+}
+
+.tabItem1{
+	background: url(../img/chat1.png) no-repeat center;
+	cursor: pointer;
+}
+
+.tabItem2{
+	background: url(../img/friend1.png) no-repeat center;
+	cursor: pointer;
+}
+
+.tabItem1a{
+	background: url(../img/chat2.png) no-repeat center;
+}
+
+.tabItem2a{
+	background: url(../img/friend2.png) no-repeat center;
+}
+
+#tab:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#option{
+	position: absolute;
+	top: 40px;
+	cursor: pointer;
+}
+
+.clist{
+	position: relative;
+	z-index: 120;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 80%;
+	overflow-y: auto;
+	background-color: #2e3238;
+	list-style-type: none;
+}
+
+.flist{
+	position: relative;
+	z-index: 110;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 80%;
+	overflow-y: auto;
+	background-color: #2e3238;
+	list-style-type: none;
+}
+
+.flist li,.clist li{
+	overflow: hidden;
+	display: block;
+	padding: 10px 20px;
+	border-bottom: 1px solid #292C33;
+	cursor: pointer;
+}
+
+.flist li img,.clist li img{
+	width: 30px;
+	height: 30px;
+	border-radius: 2px;
+	vertical-align: middle;
+}
+
+.flist li span,.clist li span{
+	display: inline-block;
+	width: 130px;
+	margin-left: 10px;
+	vertical-align: middle;
+	color: white;
+	font: normal 16px "microsoft yahei";
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.chatArea,.usinfoArea,.finfoArea,.noMessage{
+	position: absolute;
+	width: 100%;
+	min-width: 520px;
+	height: 100%;
+	min-height: 667px;
+	background-color: #eee;
+	overflow: hidden;
+}
+
+.title{
+	padding: 15px 0;
+	margin: 0 0px 0 280px;
+	border-bottom: 1px solid #d6d6d6;
+	text-align: center;
+}
+
+.titleTxt{
+	display: inline-block;
+	color: black;
+	font: normal 14px "microsoft yahei";
+}
+
+#cAMain{
+	height: 65%;
+	margin: 0 0px 0 280px;
+	padding: 0 20px;
+	border-bottom: 1px solid #d6d6d6;
+	overflow-y: auto;
+}
+
+.time{
+	margin: 10px auto;
+	text-align: center;
+}
+
+.time span{
+	display: inline-block;
+	background-color: #dcdcdc;
+	font: normal 12px "microsoft yahei";
+	padding: 1px 18px;
+	color: #fff;
+	border-radius: 2px;
+}
+
+.left{
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+}
+
+.spanL{
+	display: inline-block;
+	position: relative;
+	margin-left: 15px;
+	padding: 9px 13px;
+	background: #FFF;
+	border-radius: 4px;
+	color: black;
+	font: normal 14px "microsoft yahei";
+	vertical-align: middle;
+	word-wrap:break-word;
+	word-break:break-all;
+	max-width: 70%;
+	text-align: left;
+}
+
+.spanL:before{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: -12px;
+	top: 12px;
+	border: 6px solid transparent;
+	border-right-color: white;
+}
+
+.spanR{
+	display: inline-block;
+	position: relative;
+	margin-right: 15px;
+	padding: 9px 13px;
+	background: #b2e281;
+	border-radius: 4px;
+	color: black;
+	font: normal 14px "microsoft yahei";
+	vertical-align: middle;
+	word-wrap:break-word;
+	word-break:break-all;
+	max-width: 70%;
+	text-align: left;
+}
+
+.spanR:after{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	right: -12px;
+	top: 12px;
+	border: 6px solid transparent;
+	border-left-color: #b2e281;
+}
+
+#cAft{
+	position: relative;
+	height: 27%;
+	margin: 0 20px 0 280px;
+}
+
+#cAContent{
+	width: 97%;
+	height: 57%;
+	padding: 0 0 0 20px;
+	line-height: 120%;
+	border: 0;
+	resize: none;
+	background-color: #eee;
+	font-size: 15px;
+	font-family: "microsoft yahei";
+}
+
+#cAContent:focus{
+	outline: none;
+}
+
+#action{
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	margin-bottom: 20px;
+	height: 10%;
+	text-align: right;
+}
+
+#action span{
+	color: #888;
+	font: normal 12px "microsoft yahei";
+	margin-right: 5px;
+}
+
+#send{
+	color: black;
+	padding: 3px 30px;
+	font: normal 14px "microsoft yahei";
+	background-color: #fff;
+	border: 1px solid #c1c1c1;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.introduce{
+	margin-left: 280px;
+	padding: 80px 0 0 0;
+}
+
+.uspicture{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.uspicture img{
+	width: 100px;
+	height: 100px;
+}
+
+.nicknameArea{
+	margin: 25px auto 10px auto;
+	text-align: center;
+}
+
+.remarkArea{
+	margin: 0px auto 10px auto;
+	text-align: center;
+}
+
+.label{
+	color: #888;
+	font: normal 16px "microsoft yahei";
+}
+
+.nicknameArea input,.ageArea input,.sexArea input,.itArea input,.emailArea input,.remarkArea input{
+	width: 150px;
+	color: #2B2B2B;
+	font: 400 16px "microsoft yahei";
+	margin-bottom: 10px;
+	border: 0;
+	background-color: #eee;
+	text-align: center;
+}
+
+.id{
+	display: inline-block;
+	width: 150px;
+	color: #2B2B2B;
+	font: normal 22px "microsoft yahei";
+	border: 0;
+	background-color: #eee;
+	text-align: center;
+}
+
+.ageArea,.sexArea,.itArea,.emailArea{
+	margin: 10px auto;
+	text-align: center;
+}
+
+.itArea input{
+	width: 400px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+
+.emailArea input{
+	width: 250px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+
+#update{
+	display: block;
+	width: 100px;
+	margin: 40px auto 0;
+	padding: 10px; 
+	border: 0;
+	border-radius: 4px;
+	font: normal 18px "microsoft yahei";
+	color: white;
+	background-color: #7CCD7C;
+	cursor: pointer;
+}
+
+#sendmg{
+	display: block;
+	width: 180px;
+	margin: 50px auto 0;
+	padding: 10px; 
+	border: 0;
+	color: white;
+	font: normal 18px "microsoft yahei";
+	background-color: #42AC3E;
+}
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+.clickFriend{
+	background-color: #525252;
+}
+
+.NS,.ageC,.emailC,.remarkC{
+	margin: 20px auto;
+	text-align: center;
+}
+
+.FNickname{
+	display: inline-block;
+	color: black;
+	font: normal 24px "microsoft yahei";
+}
+
+.FSex{
+	display: inline-block;
+	margin-left: 20px;
+	width: 12px;
+	height: 12px;
+}
+
+.male{
+	background: url(../img/male.png);
+}
+
+.female{
+	background: url(../img/female.png);
+}
+
+.FIntroduce{
+	color: #888;
+	font: normal 14px "microsoft yahei";
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.age{
+	display: inline-block;
+	width: 100px;
+	padding-left: 20px;
+	padding-right: 30px;
+	color: #888;
+	font: normal 16px "microsoft yahei";
+}
+
+.email{
+	display: inline-block;
+	width: 100px;
+	padding-left: 20px;
+	padding-right: 30px;
+	color: #888;
+	font: normal 16px "microsoft yahei";
+}
+
+.unread{
+	position: relative;
+}
+
+.unread:after{
+	content:'';
+	display: block;
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	top: 6px;
+	left: 44px;
+	border-radius: 8px;
+	border: 4px solid red;
+}
+
+.noMessageMain{
+	margin-left: 280px;
+}
+
+.noMessageImg{
+	text-align: center;
+	margin-top: 130px
+}
+
+.noMessageTxt{
+	color: #ccc;
+	text-align: center;
+	font: normal 13px "microsoft yahei";
+}
+
+.tool{
+	position: relative;
+	padding: 8px 20px;
+	text-align: left;
+}
+
+.expression{
+	cursor: pointer;
+}
+
+.expressions{
+	display: none;
+	position: absolute;
+	top: -150px;
+	left: 20px;
+	background: white;
+	width: 290px;
+	height: 130px;
+	padding: 8px 10px;
+	text-align: left;
+}
+
+.expressions:after{
+	content:"";
+	position: absolute;
+	left: 12px;
+	top: 100%;
+	margin-left: -7px;
+	margin-top: -1px;
+	border: 7px solid transparent;
+	border-top-color: #FFF;
+}
+
+.expressions div{
+	display: inline-block;
+	margin: 0;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+#wx{
+	background: url(../img/wx.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#pz{
+	background: url(../img/pz.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#se{
+	background: url(../img/se.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#dy{
+	background: url(../img/dy.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#s{
+	background: url(../img/s.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#dx{
+	background: url(../img/dx.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#jy{
+	background: url(../img/jy.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#ng{
+	background: url(../img/ng.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#k{
+	background: url(../img/k.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#zk{
+	background: url(../img/zk.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#tx{
+	background: url(../img/tx.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#by{
+	background: url(../img/by.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#am{
+	background: url(../img/am.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#zj{
+	background: url(../img/zj.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#kb{
+	background: url(../img/kb.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#je{
+	background: url(../img/je.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#kk{
+	background: url(../img/kk.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#qq{
+	background: url(../img/qq.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#aq{
+	background: url(../img/aq.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#fw{
+	background: url(../img/fw.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#yb{
+	background: url(../img/yb.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#ax{
+	background: url(../img/ax.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#ok{
+	background: url(../img/ok.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#gz{
+	background: url(../img/gz.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#qz{
+	background: url(../img/qz.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#zz{
+	background: url(../img/zz.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#zy{
+	background: url(../img/zy.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#xq{
+	background: url(../img/xq.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#xw{
+	background: url(../img/xw.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#dk{
+	background: url(../img/dk.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#cy{
+	background: url(../img/cy.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#kx{
+	background: url(../img/kx.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#kl{
+	background: url(../img/kl.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#hj{
+	background: url(../img/hj.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#mt{
+	background: url(../img/mt.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#sa{
+	background: url(../img/sa.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#qs{
+	background: url(../img/qs.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#wx2{
+	background: url(../img/wx2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#tx2{
+	background: url(../img/tx2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
